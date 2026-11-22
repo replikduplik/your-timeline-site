@@ -69,7 +69,6 @@ flowchart LR
     API <--> PG
     API <-->|"/api/*"| WEB[Nuxt SPA]
     G["Google sign-in"] -->|Better Auth| API
-    WEB --> U((You))
 ```
 
 ## Tech
