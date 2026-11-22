@@ -67,7 +67,7 @@ flowchart LR
     YT -->|"on sync: subscriptions"| API[Nitro API]
     JOB --> PG[(Postgres)]
     API <--> PG
-    API <-->|"/api/*"| WEB[Nuxt SPA]
+    WEB[Nuxt SPA] <-->|"/api/*"| API
     G["Google sign-in"] -->|Better Auth| API
 ```
 
